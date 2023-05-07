@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56,25%
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+}
+
+body {
+}
+
+.container {
+  max-width: 140rem;
+  width: 100%;
+  margin: 0 auto;
+}

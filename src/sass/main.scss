@@ -1,0 +1,13 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/header';
+@import 'components/header-home';
+@import 'components/quotation-banner';
+@import 'components/button';
+@import 'components/footer';
+
+@import 'pages/home';

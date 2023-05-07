@@ -1,0 +1,98 @@
+.home {
+  width: 100%;
+
+  &__intro {
+    padding: 10rem 0;
+  }
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $color-black;
+  }
+
+  &__intro-text {
+    color: $color-grey;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    gap: 10rem;
+  }
+
+  &__about {
+    background-color: $color-grey-light;
+    padding: 10rem 0;
+  }
+
+  &__about-content {
+    flex: 1;
+    padding: 10rem 0;
+    color: $color-grey;
+  }
+
+  &__about-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: $color-black;
+  }
+
+  &__about-text {
+    margin-bottom: 2rem;
+  }
+
+  &__about-image {
+    flex: 1;
+
+    img {
+      height: 40rem;
+      border-radius: 0px 300px 0px 300px;
+    }
+  }
+
+  &__services {
+    min-height: 30rem;
+    padding: 10rem 0;
+    display: flex;
+    gap: 10rem;
+  }
+
+  &__services-content {
+    flex: 60% 0 0;
+  }
+
+  &__services-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+  }
+
+  &__services-subtitle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__services-text {
+    margin-bottom: 2rem;
+    color: $color-grey;
+  }
+
+  &__services-image {
+    flex: 1;
+    border-radius: 5px;
+    align-self: center;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}

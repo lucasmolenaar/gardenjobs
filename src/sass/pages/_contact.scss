@@ -1,0 +1,135 @@
+.contact {
+  &__container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    gap: 10rem;
+
+    @include respond(md-lg) {
+      gap: 6rem;
+    }
+
+    @include respond(sm-md) {
+      flex-direction: column;
+    }
+
+    @include respond(sm) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &__title {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    color: $color-black;
+    font-weight: 300;
+
+    @include respond(sm) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__intro-text {
+    color: $color-grey;
+    margin: 0 auto;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__input-group {
+    margin: 1.5rem 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid $color-grey;
+    border-radius: 3px;
+    transition: border 0.25s ease-in-out;
+    font-family: $font-primary;
+    background-color: $color-white;
+    color: $color-black;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $color-black;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    transition: all 0.25s ease-in-out;
+
+    &-not-empty {
+      top: 0;
+      background-color: $color-white;
+      font-size: 1.4rem;
+      padding: 0 1rem;
+    }
+  }
+
+  &__input:focus ~ &__label {
+    top: 0;
+    background-color: $color-white;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  &__textarea {
+    width: 100%;
+    margin-top: 1.5rem;
+    border: 2px solid $color-grey;
+    border-radius: 3px;
+    padding: 1rem;
+    font-family: $font-primary;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $color-black;
+    }
+  }
+
+  &__submit {
+    align-self: flex-start;
+    margin-top: 3rem;
+    border: none;
+    outline: none;
+    background-color: $color-green;
+    color: $color-white;
+    padding: 1.4rem 2.4rem;
+    border-radius: 3px;
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  &__details {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    li {
+      display: flex;
+      gap: 2.8rem;
+      align-items: center;
+
+      a {
+        color: $color-black;
+        text-decoration: none;
+      }
+    }
+  }
+}

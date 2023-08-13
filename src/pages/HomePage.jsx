@@ -3,8 +3,16 @@ import Banner from '../components/QuotationBanner';
 import Button from '../components/Button';
 import About from '../assets/images/job_in_water.jpeg';
 import Garden from '../assets/images/home-garden.jpg';
+import Carousel from '../components/Carousel';
+
+import Image1 from '../assets/images/home-garden.jpg';
+import Image2 from '../assets/images/home-garden.jpg';
+import Image3 from '../assets/images/home-garden.jpg';
+import Image4 from '../assets/images/home-garden.jpg';
 
 export default function HomePage() {
+  const slides = [Image1, Image2, Image3, Image4];
+
   return (
     <>
       <HeaderHome />
@@ -14,22 +22,22 @@ export default function HomePage() {
           <h2 className='home__title'>Onderhoud en tuinaanleg</h2>
 
           <p className='home__intro-text'>
-            Garden Jobs is een hoveniersbedrijf voor onderhoud en aanleg van
+            Garden jobs is een hoveniersbedrijf voor onderhoud en aanleg van
             tuinen in de omgeving Haarlem en de wijde omtrek. De werkzaamheden
             lopen uit een van het aanleggen van complete tuinen, het plaatsen
             van schuttingen, vijvers, pergola’s en vlonders. Kortom, voor alles
-            wat te maken heeft met tuinen kunt u terecht bij Garden Jobs.
+            wat te maken heeft met tuinen kunt u terecht bij Garden jobs.
             <br />
             <br />
             Neem gerust een kijkje op deze site om een indruk te krijgen van
-            waar Garden Jobs zoal mee bezig is.
+            waar Garden jobs zoal mee bezig is.
           </p>
         </section>
 
         <section className='home__about'>
           <div className='container home__container'>
             <div className='home__about-content'>
-              <h2 className='home__about-title'>Over Garden Jobs</h2>
+              <h2 className='home__about-title'>Over Garden jobs</h2>
 
               <p className='home__about-text'>
                 Ik, Job Plooij, ben al vanaf mijn 12<sup>de</sup> jaar aan het
@@ -82,7 +90,11 @@ export default function HomePage() {
           </div>
 
           <div className='home__services-image'>
-            <img src={Garden} alt='' />
+            <Carousel autoSlide={true} autoSlideInterval={4000}>
+              {slides.map((slide) => (
+                <img className='slide' key={slide} src={slide} alt='Slide' />
+              ))}
+            </Carousel>
           </div>
         </section>
       </div>

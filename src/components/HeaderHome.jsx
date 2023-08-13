@@ -1,22 +1,18 @@
 import { Link } from 'react-router-dom';
-import Header from './Header';
+import NavBar from './NavBar';
 
 export default function HeaderHome() {
   return (
     <div className='homeheader'>
-      <Header />
+      <NavBar />
 
       <h1 className='homeheader__title'>
-        Hoverniersbedrijf <br /> Garden Jobs
+        Hoverniersbedrijf <br /> Garden jobs
       </h1>
 
       <div className='homeheader__buttons'>
         <Link to='/contact'>
           <button className='homeheader__button'>Contact</button>
-        </Link>
-
-        <Link to='/diensten'>
-          <button className='homeheader__button'>Diensten</button>
         </Link>
       </div>
     </div>

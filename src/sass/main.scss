@@ -4,10 +4,16 @@
 @import 'base/base';
 @import 'base/typography';
 
-@import 'components/header';
+@import 'components/navbar';
 @import 'components/header-home';
+@import 'components/header-about';
 @import 'components/quotation-banner';
 @import 'components/button';
 @import 'components/footer';
+@import 'components/carousel';
 
 @import 'pages/home';
+@import 'pages/about';
+@import 'pages/landscaping';
+@import 'pages/maintenance';
+@import 'pages/contact';

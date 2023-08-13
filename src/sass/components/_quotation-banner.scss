@@ -11,6 +11,10 @@
   &__title {
     font-weight: 400;
     font-size: 2.8rem;
+
+    @include respond(sm) {
+      font-size: 2rem;
+    }
   }
 
   &__cta {

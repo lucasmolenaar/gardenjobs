@@ -50,11 +50,13 @@ const Carousel = ({
 
       <div className='carousel__indicator-container'>
         <div className='carousel__indicators'>
-          {children.map((_, i) => (
+          {children.map((_, index) => (
             <div
-              key={i}
+              key={index}
               className='carousel__indicator'
-              style={current === i ? { padding: '0.2rem' } : { opacity: '0.5' }}
+              style={
+                current === index ? { padding: '0.2rem' } : { opacity: '0.5' }
+              }
             />
           ))}
         </div>

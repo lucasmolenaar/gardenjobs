@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Over ons",
+      "href": "/over-ons"
+    },
+    {
+      "text": "Tuinaanleg",
+      "href": "/tuinaanleg"
+    },
+    {
+      "text": "Onderhoud",
+      "href": "/onderhoud"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    }
+  ]
+}

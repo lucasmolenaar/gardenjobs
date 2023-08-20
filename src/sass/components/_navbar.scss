@@ -138,17 +138,10 @@
       padding: 2.2rem;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 4rem;
 
       @media screen and (max-height: 670px) {
-        margin-top: 12rem;
-      }
-
-      @include respond(sm) {
-        max-width: 50rem;
-      }
-
-      @include respond(md) {
-        margin-top: 10rem;
+        margin-top: 2rem;
       }
     }
 
@@ -158,10 +151,6 @@
       flex-direction: column;
       gap: 6.4rem;
       margin-top: 8rem;
-
-      @include respond(smmd) {
-        align-items: center;
-      }
     }
 
     a {

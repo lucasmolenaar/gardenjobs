@@ -97,6 +97,10 @@
       outline: none;
       border: 2px solid $color-black;
     }
+
+    &::placeholder {
+      font-family: $font-primary;
+    }
   }
 
   &__label {
@@ -106,6 +110,8 @@
     transform: translateY(-50%);
     transition: all 0.25s ease-in-out;
     font-size: 1.6rem;
+    font-family: $font-primary;
+    color: $color-black;
 
     @include respond(md) {
       font-size: 1.5rem;
@@ -138,6 +144,7 @@
     padding: 1rem;
     font-family: $font-primary;
     font-size: 1.6rem;
+    color: $color-black;
 
     @include respond(md) {
       font-size: 1.5rem;
@@ -192,9 +199,25 @@
         line-height: 2.2rem;
       }
 
+      @include respond(sm) {
+        gap: 1.2rem;
+      }
+
       @include respond(xs) {
         font-size: 1.4rem;
         line-height: 2rem;
+      }
+
+      svg {
+        @include respond(sm) {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+
+        @include respond(xs) {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
       }
 
       a {

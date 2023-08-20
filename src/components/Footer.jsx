@@ -83,7 +83,7 @@ export default function Footer() {
           <h2 className='footer__contact-title'>Contact</h2>
           <p>Bent u toe aan iets nieuws?</p>
 
-          <Link to='/contact'>
+          <Link to='/contact' onClick={() => window.scrollTo(0, 0)}>
             <button className='footer__contact-btn'>Neem nu contact op</button>
           </Link>
         </div>

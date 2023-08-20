@@ -157,7 +157,7 @@
       display: flex;
       flex-direction: column;
       gap: 6.4rem;
-      margin-top: 12rem;
+      margin-top: 8rem;
 
       @include respond(smmd) {
         align-items: center;
@@ -198,6 +198,42 @@
           color: $color-white;
         }
       }
+    }
+
+    &-socialscontainer {
+      margin-top: auto;
+    }
+
+    &-socials {
+      width: 100%;
+      padding: 2rem;
+      border-top: 1px solid rgba($color: $color-white, $alpha: 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1.6rem;
+
+      path {
+        fill: rgba($color: $color-white, $alpha: 0.8);
+      }
+    }
+
+    &-socialtext {
+      color: rgba($color: $color-white, $alpha: 0.8);
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    &-divider {
+      height: 2.4rem;
+      width: 1px;
+      background-color: $color-white;
+      margin: 0 2.4rem;
     }
   }
 }

@@ -5,7 +5,7 @@ import QuotationBanner from '../components/QuotationBanner';
 const AboutPage = () => {
   return (
     <>
-      <HeaderAbout title='Over Garden jobs' />
+      <HeaderAbout title='Over ons' />
 
       <div className='about'>
         <section className='container about__container'>

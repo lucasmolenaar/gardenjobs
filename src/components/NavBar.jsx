@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion as m } from 'framer-motion';
 
+import { FaFacebookF } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+
 import Logo from '../assets/images/logo.png';
 import data from '../assets/data/navigation.json';
 
@@ -10,8 +13,6 @@ export default function Header() {
   const [menuIsOpen, toggleMenuIsOpen] = useState(false);
   const [links, setLinks] = useState([]);
   const { pathname } = useLocation();
-
-  console.log(pathname);
 
   useEffect(() => {
     const changeWidth = () => setWidth(window.innerWidth);
@@ -119,6 +120,23 @@ export default function Header() {
               ))}
             </ul>
           </div>
+
+          <m.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className='container header__menu-mobile-socialscontainer'
+          >
+            <div className='header__menu-mobile-socials'>
+              <FaFacebookF className='header__menu-mobile-icon' />
+              <span className='header__menu-mobile-socialtext'>Facebook</span>
+
+              <span className='header__menu-mobile-divider'></span>
+
+              <FaInstagram className='header__menu-mobile-icon' />
+              <span className='header__menu-mobile-socialtext'>Instagram</span>
+            </div>
+          </m.div>
         </m.div>
       )}
     </header>

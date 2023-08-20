@@ -22,15 +22,16 @@ export default function HomePage() {
           <h2 className='home__title'>Onderhoud en tuinaanleg</h2>
 
           <p className='home__intro-text'>
-            Garden jobs is een hoveniersbedrijf voor onderhoud en aanleg van
-            tuinen in de omgeving Haarlem en de wijde omtrek. De werkzaamheden
-            lopen uit een van het aanleggen van complete tuinen, het plaatsen
-            van schuttingen, vijvers, pergola’s en vlonders. Kortom, voor alles
-            wat te maken heeft met tuinen kunt u terecht bij Garden jobs.
+            Garden Jobs is een hoveniersbedrijf gespecialiseerd in het onderhoud
+            en de aanleg van tuinen in de omgeving van Haarlem en de wijde
+            omtrek. Onze werkzaamheden variëren van het aanleggen van complete
+            tuinen tot het plaatsen van schuttingen, vijvers, pergola’s en
+            vlonders. Kortom, voor alles wat met tuinen te maken heeft, kunt u
+            bij Garden Jobs terecht.
             <br />
             <br />
-            Neem gerust een kijkje op deze site om een indruk te krijgen van
-            waar Garden jobs zoal mee bezig is.
+            Aarzel niet om een kijkje te nemen op onze website om een indruk te
+            krijgen van de projecten waarmee Garden Jobs zich bezighoudt.
           </p>
         </section>
 
@@ -76,6 +77,8 @@ export default function HomePage() {
 
             <Button path='/diensten' text='Kom meer te weten' />
 
+            <div className='home__services-spacer'></div>
+
             <h4 className='home__services-subtitle'>Tuinaanleg</h4>
 
             <p className='home__services-text'>
@@ -91,8 +94,8 @@ export default function HomePage() {
 
           <div className='home__services-image'>
             <Carousel autoSlide={true} autoSlideInterval={4000}>
-              {slides.map((slide) => (
-                <img className='slide' key={slide} src={slide} alt='Slide' />
+              {slides.map((slide, index) => (
+                <img className='slide' key={index} src={slide} alt='Slide' />
               ))}
             </Carousel>
           </div>

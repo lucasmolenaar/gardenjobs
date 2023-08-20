@@ -27,12 +27,38 @@
     color: $color-black;
     margin-bottom: 4rem;
 
+    @include respond(lg) {
+      font-size: 3.2rem;
+    }
+
     @include respond(md) {
       margin-bottom: 2rem;
+      font-size: 2.8rem;
+    }
+
+    @include respond(xs) {
+      font-size: 2.4rem;
     }
   }
 
   &__text {
     color: $color-grey;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+
+    @include respond(lg) {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+
+    @include respond(md) {
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+    }
+
+    @include respond(xs) {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
   }
 }

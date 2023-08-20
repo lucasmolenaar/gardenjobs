@@ -35,6 +35,19 @@
 
     &-title {
       margin-bottom: 2rem;
+      font-size: 3.2rem;
+
+      @include respond(lg) {
+        font-size: 2.8rem;
+      }
+
+      @include respond(md) {
+        margin-bottom: 2rem;
+      }
+
+      @include respond(xs) {
+        font-size: 2rem;
+      }
     }
 
     &-list {
@@ -52,6 +65,13 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
+
+      svg {
+        @include respond(md) {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
     }
 
     &-item:hover > &-icon {
@@ -72,6 +92,19 @@
 
     &-title {
       margin-bottom: 2rem;
+      font-size: 3.2rem;
+
+      @include respond(lg) {
+        font-size: 2.8rem;
+      }
+
+      @include respond(md) {
+        margin-bottom: 2rem;
+      }
+
+      @include respond(xs) {
+        font-size: 2rem;
+      }
     }
 
     &-list {
@@ -86,10 +119,26 @@
     }
 
     &-item {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-family: $font-primary;
       cursor: pointer;
       transition: all 0.2s;
+      line-height: 2.8rem;
+
+      @include respond(lg) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+
+      @include respond(md) {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+      }
+
+      @include respond(xs) {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
 
       a {
         color: $color-white;
@@ -105,6 +154,12 @@
         transform: translateX(10px);
       }
     }
+
+    &-icon {
+      @include respond(md) {
+        display: none;
+      }
+    }
   }
 
   &__details {
@@ -116,6 +171,19 @@
 
     &-title {
       margin-bottom: 2rem;
+      font-size: 3.2rem;
+
+      @include respond(lg) {
+        font-size: 2.8rem;
+      }
+
+      @include respond(md) {
+        margin-bottom: 2rem;
+      }
+
+      @include respond(xs) {
+        font-size: 2rem;
+      }
     }
 
     &-list {
@@ -133,6 +201,23 @@
       align-items: center;
       gap: 1.2rem;
       padding: 2.4rem 0;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+
+      @include respond(lg) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+
+      @include respond(md) {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+      }
+
+      @include respond(xs) {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
 
       &:not(:last-child) {
         border-bottom: 1px solid $color-white;
@@ -158,10 +243,40 @@
 
     &-title {
       margin-bottom: 2rem;
+      font-size: 3.2rem;
+
+      @include respond(lg) {
+        font-size: 2.8rem;
+      }
+
+      @include respond(md) {
+        margin-bottom: 2rem;
+      }
+
+      @include respond(xs) {
+        font-size: 2rem;
+      }
     }
 
     p {
       font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+
+      @include respond(lg) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+
+      @include respond(md) {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+      }
+
+      @include respond(xs) {
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
     }
 
     &-btn {

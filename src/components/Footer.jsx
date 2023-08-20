@@ -28,27 +28,27 @@ export default function Footer() {
           <ul className='footer__pages-list'>
             <li className='footer__pages-item'>
               <BsChevronRight className='footer__pages-icon' />
-              <a href='#'>Home</a>
+              <a href='/'>Home</a>
             </li>
             <li className='footer__pages-item'>
               <BsChevronRight className='footer__pages-icon' />
-              <a href='#'>Over ons</a>
+              <a href='/over-ons'>Over ons</a>
             </li>
             <li className='footer__pages-item'>
               <BsChevronRight className='footer__pages-icon' />
-              <a href='#'>Tuinaanleg</a>
+              <a href='/tuinaanleg'>Tuinaanleg</a>
             </li>
             <li className='footer__pages-item'>
               <BsChevronRight className='footer__pages-icon' />
-              <a href='#'>Onderhoud</a>
+              <a href='/onderhoud'>Onderhoud</a>
             </li>
             <li className='footer__pages-item'>
               <BsChevronRight className='footer__pages-icon' />
-              <a href='#'>Contact</a>
+              <a href='/contact'>Contact</a>
             </li>
             <li className='footer__pages-item'>
               <BsChevronRight className='footer__pages-icon' />
-              <a href='#'>Offerte aanvragen</a>
+              <a href='contact'>Offerte aanvragen</a>
             </li>
           </ul>
         </div>

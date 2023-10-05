@@ -6,6 +6,11 @@
 .carousel__slides {
   display: flex;
   transition: transform 0.2s ease-out;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
 .carousel__slide {

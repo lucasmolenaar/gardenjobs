@@ -8,4 +8,9 @@
   font-family: $font-primary;
   font-size: 1.6rem;
   cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-green-dark;
+  }
 }

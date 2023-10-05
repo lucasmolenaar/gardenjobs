@@ -173,6 +173,11 @@
     font-size: 1.8rem;
     cursor: pointer;
     font-weight: 500;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-green-dark;
+    }
   }
 
   &__details {

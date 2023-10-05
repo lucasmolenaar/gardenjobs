@@ -1,5 +1,6 @@
 import HeaderAbout from '../components/Header';
-import Image from '../assets/images/Gardenjobs-over-mij.jpeg';
+// import Image from '../assets/images/Gardenjobs-over-mij.jpeg';
+import AboutImage from '../assets/images/job_in_water.jpeg';
 import QuotationBanner from '../components/QuotationBanner';
 
 const AboutPage = () => {
@@ -32,7 +33,7 @@ const AboutPage = () => {
           </div>
 
           <div className='home__about-image'>
-            <img src={Image} alt='' />
+            <img src={AboutImage} alt='' />
           </div>
         </section>
 

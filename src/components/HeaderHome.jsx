@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion as m } from 'framer-motion';
 import NavBar from './NavBar';
 
 export default function HeaderHome() {
@@ -6,15 +7,24 @@ export default function HeaderHome() {
     <div className='homeheader'>
       <NavBar />
 
-      <h1 className='homeheader__title'>
+      <m.h1
+        className='homeheader__title'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         Hoverniersbedrijf <br /> Garden jobs
-      </h1>
+      </m.h1>
 
-      <div className='homeheader__buttons'>
+      <m.div
+        className='homeheader__buttons'
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+      >
         <Link to='/contact'>
           <button className='homeheader__button'>Contact</button>
         </Link>
-      </div>
+      </m.div>
     </div>
   );
 }

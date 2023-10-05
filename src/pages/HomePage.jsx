@@ -1,17 +1,19 @@
+import { motion as m } from 'framer-motion';
+
 import HeaderHome from '../components/HeaderHome';
 import Banner from '../components/QuotationBanner';
 import Button from '../components/Button';
-import About from '../assets/images/job_in_water.jpeg';
-import Garden from '../assets/images/home-garden.jpg';
+import AboutImage from '../assets/images/home-about.jpeg';
 import Carousel from '../components/Carousel';
 
-import Image1 from '../assets/images/home-garden.jpg';
-import Image2 from '../assets/images/home-garden.jpg';
-import Image3 from '../assets/images/home-garden.jpg';
-import Image4 from '../assets/images/home-garden.jpg';
+import Image1 from '../assets/images/carousel-1.jpeg';
+import Image2 from '../assets/images/carousel-2.jpeg';
+import Image3 from '../assets/images/carousel-3.jpeg';
+import Image4 from '../assets/images/carousel-4.jpeg';
+import Image5 from '../assets/images/carousel-5.jpeg';
 
 export default function HomePage() {
-  const slides = [Image1, Image2, Image3, Image4];
+  const slides = [Image1, Image2, Image3, Image4, Image5];
 
   return (
     <>
@@ -19,9 +21,21 @@ export default function HomePage() {
 
       <div className='home'>
         <section className='container home__intro'>
-          <h2 className='home__title'>Onderhoud en tuinaanleg</h2>
+          <m.h2
+            className='home__title'
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            Onderhoud en tuinaanleg
+          </m.h2>
 
-          <p className='home__intro-text'>
+          <m.p
+            className='home__intro-text'
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+          >
             Garden Jobs is een hoveniersbedrijf gespecialiseerd in het onderhoud
             en de aanleg van tuinen in de omgeving van Haarlem en de wijde
             omtrek. Onze werkzaamheden variëren van het aanleggen van complete
@@ -32,35 +46,58 @@ export default function HomePage() {
             <br />
             Aarzel niet om een kijkje te nemen op onze website om een indruk te
             krijgen van de projecten waarmee Garden Jobs zich bezighoudt.
-          </p>
+          </m.p>
         </section>
 
         <section className='home__about'>
           <div className='container home__container'>
             <div className='home__about-content'>
-              <h2 className='home__about-title'>Over Garden jobs</h2>
+              <m.h2
+                className='home__about-title'
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.7 }}
+              >
+                Over Garden jobs
+              </m.h2>
 
-              <p className='home__about-text'>
+              <m.p
+                className='home__about-text'
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.7, duration: 0.7 }}
+              >
                 Ik, Job Plooij, ben al vanaf mijn 12<sup>de</sup> jaar aan het
                 werk in tuinen. Het liefst was ik na schooltijd in de tuin van
                 familie en vrienden te vinden. Ik begon met
                 onderhoudswerkzaamheden en heb dit later verder uit kunnen
                 breiden tot het aanleggen van tuinen. Ik deed dit vaak met
                 vrienden. Het was, en is nog steeds, een hobby van mij.
-              </p>
+              </m.p>
 
               <Button path='/over-ons' text='Lees meer' />
             </div>
 
-            <div className='home__about-image'>
-              <img src={About} alt='' />
-            </div>
+            <m.div
+              className='home__about-image'
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.7 }}
+            >
+              <img src={AboutImage} alt='' />
+            </m.div>
           </div>
         </section>
 
         <Banner bgColor='#9fc93e' />
 
-        <section className='container home__services'>
+        <m.section
+          className='container home__services'
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.7 }}
+        >
           <div className='home__services-content'>
             <h2 className='home__services-title'>Diensten</h2>
 
@@ -99,7 +136,7 @@ export default function HomePage() {
               ))}
             </Carousel>
           </div>
-        </section>
+        </m.section>
       </div>
     </>
   );

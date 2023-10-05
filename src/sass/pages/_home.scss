@@ -80,6 +80,9 @@
   &__about-content {
     flex: 1;
     color: $color-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__about-title {
@@ -130,7 +133,8 @@
 
     img {
       height: 40rem;
-      border-radius: 0px 300px 0px 300px;
+      // border-radius: 0px 300px 0px 300px;
+      border-radius: 5px;
 
       @include respond(md-lg) {
         height: 30rem;

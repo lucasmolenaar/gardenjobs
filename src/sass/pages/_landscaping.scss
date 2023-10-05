@@ -23,7 +23,8 @@
   &__image {
     img {
       height: 40rem;
-      border-radius: 0px 300px 0px 300px;
+      // border-radius: 0px 300px 0px 300px;
+      border-radius: 5px;
 
       @include respond(md-lg) {
         height: 30rem;

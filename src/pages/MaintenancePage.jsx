@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import Image from '../assets/images/Gardenjobs-over-mij.jpeg';
+import Image from '../assets/images/maintenance.jpeg';
 import QuotationBanner from '../components/QuotationBanner';
 import { BsArrowRightShort } from 'react-icons/bs';
 

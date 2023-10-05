@@ -56,6 +56,7 @@ export default function HomePage() {
                 className='home__about-title'
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 0.7 }}
               >
                 Over Garden jobs
@@ -83,6 +84,7 @@ export default function HomePage() {
               className='home__about-image'
               initial={{ opacity: 0, y: -50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.9, duration: 0.7 }}
             >
               <img src={AboutImage} alt='' />
@@ -96,6 +98,7 @@ export default function HomePage() {
           className='container home__services'
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.7 }}
         >
           <div className='home__services-content'>

@@ -13,12 +13,22 @@ export default function Footer() {
           <h2 className='footer__socials-title'>Volg ons</h2>
 
           <ul className='footer__socials-list'>
-            <li className='footer__socials-item'>
-              <FaFacebookF className='footer__socials-icon' size={30} />
-            </li>
-            <li className='footer__socials-item'>
-              <FaInstagram className='footer__socials-icon' size={30} />
-            </li>
+            <Link
+              target='_blank'
+              to='https://www.facebook.com/people/Garden-jobs/100057469358602/'
+            >
+              <li className='footer__socials-item'>
+                <FaFacebookF className='footer__socials-icon' size={30} />
+              </li>
+            </Link>
+            <Link
+              target='_blank'
+              to='https://www.instagram.com/hoveniersbedrijf_garden.jobs/'
+            >
+              <li className='footer__socials-item'>
+                <FaInstagram className='footer__socials-icon' size={30} />
+              </li>
+            </Link>
           </ul>
         </div>
 

@@ -1,4 +1,5 @@
 import { motion as m } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 import HeaderHome from '../components/HeaderHome';
 import Banner from '../components/QuotationBanner';
@@ -17,6 +18,9 @@ export default function HomePage() {
 
   return (
     <>
+      <Helmet>
+        <title>Garden jobs | Home</title>
+      </Helmet>
       <HeaderHome />
 
       <div className='home'>
@@ -87,7 +91,10 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ delay: 0.9, duration: 0.7 }}
             >
-              <img src={AboutImage} alt='' />
+              <img
+                src={AboutImage}
+                alt='Garden jobs, home, hoveniersbedrijf gespecialiseerd in het onderhoud en de aanleg van tuinen.'
+              />
             </m.div>
           </div>
         </section>
@@ -135,7 +142,12 @@ export default function HomePage() {
           <div className='home__services-image'>
             <Carousel autoSlide={true} autoSlideInterval={4000}>
               {slides.map((slide, index) => (
-                <img className='slide' key={index} src={slide} alt='Slide' />
+                <img
+                  className='slide'
+                  key={index}
+                  src={slide}
+                  alt='Garden jobs, home, hoveniersbedrijf gespecialiseerd in het onderhoud en de aanleg van tuinen'
+                />
               ))}
             </Carousel>
           </div>

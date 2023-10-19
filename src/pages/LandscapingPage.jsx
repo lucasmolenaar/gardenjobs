@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import Image from '../assets/images/landscaping.jpeg';
 import QuotationBanner from '../components/QuotationBanner';
@@ -6,12 +7,19 @@ import { BsArrowRightShort } from 'react-icons/bs';
 const LandscapingPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Garden jobs | Tuinaanleg</title>
+      </Helmet>
+
       <Header title='Tuinaanleg' />
 
       <div className='landscaping'>
         <section className='container landscaping__container'>
           <div className='landscaping__image'>
-            <img src={Image} alt='' />
+            <img
+              src={Image}
+              alt='Garden jobs, tuinaanleg, hoveniersbedrijf gespecialiseerd in het onderhoud en de aanleg van tuinen'
+            />
           </div>
 
           <div className='landscaping__content'>

@@ -1,11 +1,14 @@
+import { Helmet } from 'react-helmet';
 import HeaderAbout from '../components/Header';
-// import Image from '../assets/images/Gardenjobs-over-mij.jpeg';
 import AboutImage from '../assets/images/job_in_water.jpeg';
 import QuotationBanner from '../components/QuotationBanner';
 
 const AboutPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Garden jobs | Over ons</title>
+      </Helmet>
       <HeaderAbout title='Over ons' />
 
       <div className='about'>
@@ -33,7 +36,10 @@ const AboutPage = () => {
           </div>
 
           <div className='home__about-image'>
-            <img src={AboutImage} alt='' />
+            <img
+              src={AboutImage}
+              alt='Garden jobs, over ons, hoveniersbedrijf gespecialiseerd in het onderhoud en de aanleg van tuinen'
+            />
           </div>
         </section>
 

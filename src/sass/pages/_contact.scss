@@ -226,8 +226,12 @@
       }
 
       a {
-        color: $color-black;
+        color: $color-grey;
         text-decoration: none;
+      }
+
+      p {
+        color: $color-grey;
       }
     }
   }

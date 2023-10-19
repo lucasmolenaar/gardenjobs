@@ -25,7 +25,7 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = menuIsOpen ? 'hidden' : 'visible';
+    // document.body.style.overflow = menuIsOpen ? 'hidden' : 'visible';
 
     if (menuIsOpen) {
       window.scrollTo(0, 0);
@@ -40,7 +40,11 @@ export default function Header() {
     <header className='header'>
       <div className='header__container'>
         <Link to='/' className='header__logo-link'>
-          <img className='header__logo' src={Logo} alt='Garden jobs Logo' />
+          <img
+            className='header__logo'
+            src={Logo}
+            alt='Garden jobs Logo, hoveniersbedrijf gespecialiseerd in het onderhoud en de aanleg van tuinen'
+          />
         </Link>
 
         <nav className='header__nav'>
@@ -67,7 +71,9 @@ export default function Header() {
   ) : (
     <header className='header'>
       <div className='header__container'>
-        <img className='header__logo' src={Logo} alt='Garden jobs Logo' />
+        <Link to='/' className='header__logo-link'>
+          <img className='header__logo' src={Logo} alt='Garden jobs Logo' />
+        </Link>
 
         <button
           className={
@@ -128,13 +134,27 @@ export default function Header() {
             className='container header__menu-mobile-socialscontainer'
           >
             <div className='header__menu-mobile-socials'>
-              <FaFacebookF className='header__menu-mobile-icon' />
-              <span className='header__menu-mobile-socialtext'>Facebook</span>
+              <Link
+                className='header__menu-mobile-socials-link'
+                target='_blank'
+                to='https://www.facebook.com/people/Garden-jobs/100057469358602/'
+              >
+                <FaFacebookF className='header__menu-mobile-icon' />
+                <span className='header__menu-mobile-socialtext'>Facebook</span>
+              </Link>
 
               <span className='header__menu-mobile-divider'></span>
 
-              <FaInstagram className='header__menu-mobile-icon' />
-              <span className='header__menu-mobile-socialtext'>Instagram</span>
+              <Link
+                className='header__menu-mobile-socials-link'
+                target='_blank'
+                to='https://www.instagram.com/hoveniersbedrijf_garden.jobs/'
+              >
+                <FaInstagram className='header__menu-mobile-icon' />
+                <span className='header__menu-mobile-socialtext'>
+                  Instagram
+                </span>
+              </Link>
             </div>
           </m.div>
         </m.div>

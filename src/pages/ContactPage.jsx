@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import { BsHouseDoor, BsWhatsapp } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
@@ -20,6 +21,10 @@ const ContactPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Garden jobs | Contact</title>
+      </Helmet>
+
       <Header title='Contact' />
 
       <div className='container contact'>
@@ -33,7 +38,7 @@ const ContactPage = () => {
               afspraak met Garden jobs!
             </p>
 
-            <form className='contact__form'>
+            {/* <form className='contact__form'>
               <div className='contact__input-group'>
                 <input
                   className='contact__input'
@@ -75,7 +80,7 @@ const ContactPage = () => {
               <button className='contact__submit' type='submit'>
                 Verstuur
               </button>
-            </form>
+            </form> */}
           </div>
 
           <div className='contact__right'>

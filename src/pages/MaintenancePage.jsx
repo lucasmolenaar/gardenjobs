@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import Image from '../assets/images/maintenance.jpeg';
 import QuotationBanner from '../components/QuotationBanner';
@@ -6,6 +7,10 @@ import { BsArrowRightShort } from 'react-icons/bs';
 const MaintenancePage = () => {
   return (
     <>
+      <Helmet>
+        <title>Garden jobs | Onderhoud</title>
+      </Helmet>
+
       <Header title='Onderhoud' />
 
       <div className='maintenance'>
@@ -64,7 +69,10 @@ const MaintenancePage = () => {
           </div>
 
           <div className='maintenance__image'>
-            <img src={Image} alt='' />
+            <img
+              src={Image}
+              alt='Garden jobs, onderhoud, hoveniersbedrijf gespecialiseerd in het onderhoud en de aanleg van tuinen'
+            />
           </div>
         </section>
 

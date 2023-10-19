@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function QuotationBanner({ bgColor }) {
-  // style={{ backgroundColor: bgColor }}
+export default function QuotationBanner() {
   return (
     <div className='banner'>
       <div className='container'>

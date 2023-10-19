@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import HeaderHome from '../components/HeaderHome';
 import Banner from '../components/QuotationBanner';
 import Button from '../components/Button';
-import AboutImage from '../assets/images/home-about.jpeg';
+import AboutImage from '../assets/images/home-about.webp';
 import Carousel from '../components/Carousel';
 
 import Image1 from '../assets/images/carousel-1.jpeg';
